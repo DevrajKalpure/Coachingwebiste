@@ -10,7 +10,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/courses")
-@CrossOrigin(origins = "http://localhost:3000") // Allow frontend to connect
+//@CrossOrigin(origins = "http://localhost:3000") // Allow frontend to connect
+@CrossOrigin(origins = "http://coachingfrontend-tau.vercel.app") // Allow frontend to connect
 public class CourseController {
 
     @Autowired

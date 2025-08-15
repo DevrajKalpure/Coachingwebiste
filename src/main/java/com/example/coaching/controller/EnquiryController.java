@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/enquiries")
-@CrossOrigin(origins = "http://localhost:3000")
+//@CrossOrigin(origins = "http://localhost:3000") // Allow frontend to connect
+@CrossOrigin(origins = "http://coachingfrontend-tau.vercel.app") // Allow frontend to connect
 public class EnquiryController {
 
     @Autowired
